@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --grey-F0: rgba(240, 233, 233, 1);
+    --yallow-FF: rgba(255, 211, 51, 1);
+}
