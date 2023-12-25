@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --grey-F0: rgba(240, 233, 233, 1);
+    --yallow-FF: rgba(255, 211, 51, 1);
+    --yallow-B5: rgba(181, 150, 40, 1);
+    --white-FF: rgba(255, 255, 255, 1);
+    --grey-C4: rgba(196, 196, 196, 1);
+    --grey-6C: rgba(108, 108, 108, 1);
+    --black-3D: rgba(61, 70, 77, 1);
+    --grey-DF: rgba(223, 216, 216, 1);
+    --grey-F8: rgba(248, 248, 248, 1);
+    --grey-B4: rgba(180, 177, 177, 1);
+    --grey-FF: rgba(255, 252, 252, 1);
+    --red-D7: rgba(215, 0, 0, 1);
+    --green-00: rgba(0, 202, 20, 0.5);
+    --green-C4: rgba(196, 255, 202, 0.5);
+}

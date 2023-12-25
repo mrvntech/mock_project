@@ -1,0 +1,50 @@
+.benefits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    gap: 9px;
+
+    >.item {
+        width: 281px;
+        background: linear-gradient(0deg, var(--grey-DF), var(--grey-DF)),
+            linear-gradient(0deg, var(--grey-F8), var(--grey-F8));
+        ;
+        border: 1px solid rgba(223, 216, 216, 1);
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 20px;
+
+        >.icon {
+            width: 41.13px;
+            height: 30px;
+        }
+
+        >.text {
+            display: flex;
+            flex-direction: column;
+
+            >.name {
+                font-family: Arial;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+
+            >.content {
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+        }
+    }
+}
