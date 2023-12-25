@@ -1,13 +1,79 @@
 .page-layout {
     position: relative;
-    top: 13px;
+    top: 10px;
+    background-color: var(--white-FF);
 
     >.top-bar {
-        background-color: var(--grey-F0);
-        border-radius: 5px, 5px, 0px, 0px;
+        height: 159.04px;
+
+
+        >.top-bar {
+            background-color: var(--grey-F0);
+            border-radius: 5px, 5px, 0px, 0px;
+        }
+
+        >.main-bar {
+            background-color: var(--yallow-FF);
+            height: 100%;
+            display: flex;
+
+            >.content {
+                display: flex;
+                justify-content: space-around;
+                width: 1099.87px;
+
+                >.name {
+                    align-self: center;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+
+                >.search-form {
+                    padding: 10px;
+                    width: 748px;
+                    height: 50.35px;
+                    background-color: var(--grey-C4);
+                    border-radius: 5px;
+
+                    >.content {
+                        // max-width: 164px;
+                        align-self: center;
+
+                        >.icon {
+                            height: 25.43px;
+                            width: 30.89px;
+                        }
+
+
+                        >.line {
+                            border: 1px solid var(--grey-6C);
+                        }
+
+                        >.field {
+                            width: 270px;
+                            align-self: center;
+                            background-color: var(--grey-C4);
+                        }
+                    }
+
+
+
+                    >.action {
+                        align-self: center;
+
+                        >.icon {
+                            width: 29.45px;
+                            height: 28.2px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
-    >.main-bar {
-        background-color: var(--yallow-FF);
+    >.main-content {
+        background-color: var(--white-FF);
     }
+
 }
