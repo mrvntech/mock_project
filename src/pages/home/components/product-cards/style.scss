@@ -1,0 +1,115 @@
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    >.product-card {
+        background: linear-gradient(0deg, var(--grey-B4), var(--grey-B4)),
+            linear-gradient(0deg, var(--grey-FF), var(--grey-FF));
+        border: 1px solid var(--grey-B4);
+        width: 280px;
+        border-radius: 5px;
+        border: 1px;
+        padding: 10px 10px 5px 10px;
+
+        >.image {
+            margin: auto;
+            width: 233.18px;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        >.properties {
+            width: 227.05px;
+            border: 1px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            >.name {
+                font-family: Arial;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 37px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            >.id {
+                font-family: Arial;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+
+                font-family: Arial;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 21px;
+                letter-spacing: 0em;
+                text-align: left;
+
+            }
+
+            .price {
+                font-family: Arial;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+
+            .rate {
+                display: flex;
+                flex-direction: row;
+            }
+
+
+            .sale {
+                font-family: Arial;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: var(--red-D7);
+            }
+
+            >.state {
+                width: 98px;
+                height: 24px;
+                border-radius: 10px;
+                border: 1px solid var(--green-00);
+                box-shadow: 5px 5px 20px 0px var(--green-C4);
+                background: linear-gradient(0deg, rgba(0, 167, 17, 0.5), rgba(0, 167, 17, 0.5)),
+                    linear-gradient(0deg, rgba(0, 202, 20, 0.5), rgba(0, 202, 20, 0.5));
+                display: flex;
+                align-items: center;
+
+                >.text {
+                    font-family: Almarai;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--white-FF);
+                    width: 56px;
+                    height: 16px;
+                    margin: auto;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
