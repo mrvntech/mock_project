@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
+import { RootState } from "../../stores";
+import { setIsOpenLoginPopup } from "../../stores/popup";
 
 export default function Header() {
+    const dispatch = useDispatch()
+    const isAuthentication = useSelector((state: RootState) => state.authentication.isAuthentication)
+    const navigate = useNavigate()
     return (
         <div className="top-bar">
             <div className="top-bar">
@@ -12,7 +18,6 @@ export default function Header() {
                 </div>
             </div>
             <div className="main-bar">
-
                 <div className="max-w-6xl m-auto content">
                     <Link to={"/"} className="name">SHOP APP</Link>
                     <div className="flex search-form justify-between">
@@ -27,8 +32,11 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <img src="/cart-icon.svg" />
-                        <img src="/user-icon.svg" />
+                        <img src="/cart-icon.svg" onClick={() => {
+                            if (!isAuthentication) dispatch(setIsOpenLoginPopup(true))
+                            else navigate("/cart")
+                        }} />
+                        {isAuthentication ? <img src="/user-image.svg"></img> : <img src="/user-icon.svg" onClick={() => { if (!isAuthentication) dispatch(setIsOpenLoginPopup(true)) }} />}
                     </div>
                 </div>
             </div>
