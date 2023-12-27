@@ -9,6 +9,7 @@
 
     >.top-bar {
         position: relative;
+        z-index: 2;
 
         >.top-bar {
             background-color: var(--grey-F0);
@@ -32,6 +33,7 @@
                 }
 
                 >.search-form {
+                    align-self: center;
                     padding: 10px;
                     width: 748px;
                     height: 50.35px;
@@ -80,6 +82,7 @@
         background-color: var(--white-FF);
         width: 1152px;
         margin: auto;
+        z-index: 1;
     }
 }
 

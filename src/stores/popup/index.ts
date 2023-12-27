@@ -5,7 +5,7 @@ const popupSlice = createSlice({
     initialState: {
         isOpenLoginPopup: false,
         isOpenForgotPasswordPopup: false,
-        isOpenRegisterPopup: false
+        isOpenRegisterPopup: false,
     },
     reducers: {
         setIsOpenLoginPopup: (state, action: PayloadAction<boolean>) => {
