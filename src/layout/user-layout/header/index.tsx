@@ -38,7 +38,11 @@ export default function Header() {
                                 if (!isAuthentication) dispatch(setIsOpenLoginPopup(true))
                                 else navigate("/cart")
                             }} />
-                            <div className="cart">cart</div>
+                            <div className="cart">
+                                <div className="cart-content">
+                                    cart
+                                </div>
+                            </div>
                         </div>
                         <div className="user-icon">
                             {isAuthentication ? <>

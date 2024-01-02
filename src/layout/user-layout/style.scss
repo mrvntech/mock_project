@@ -10,6 +10,7 @@
     >.top-bar {
         position: fixed;
         z-index: 2;
+        width: 100%;
 
         >.top-bar {
             background-color: var(--grey-F0);
@@ -83,6 +84,7 @@
         width: 1152px;
         margin: auto;
         z-index: 1;
+        padding-top: 154px;
     }
 }
 
