@@ -1,3 +1,4 @@
+import Modal from "../../component/modal"
 import Benefit from "./components/benefits"
 import Categories from "./components/categories"
 import ProductCards from "./components/product-cards"
@@ -12,6 +13,11 @@ export default function Home() {
                     <div className="big">
                         <img src="/Carousel.svg" alt="" className="big" />
                     </div>
+                    <Modal openButton={<button>open</button>} content={<div>this is content
+                        <input type="text" />
+                    </div>} closeButton={<button>close</button>}>
+
+                    </Modal>
                     <div className="small">
                         <img src="/Photos.svg" alt="" className="image" />
                         <img src="/Photos.svg" alt="" className="image" />
